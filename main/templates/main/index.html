@@ -42,15 +42,15 @@ Start Content
         </div>
         <div class="col-md">
           <div class="bannerContent">
-            <h1 class="xlTitle pb-3">Hi, I’m {{me.first_name|title}}, <br> a {{me.userprofile.title}} </br></h1>
+            <h1 class="xlTitle pb-3">Hi, 我是王鑫, <br> a {{me.userprofile.title}} </br></h1>
             <p>{{me.userprofile.bio}}</p>
             <div class="bannerBtnCol">
               <div class="row">
                 <div class="col-auto">
-                  <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">Download Resume</a>
+                  <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">下载我的简历</a>
                 </div>
                 <div class="col-auto">
-                  <a href="{% url 'main:contact' %}" class="btn btnOutline">Contact</a>
+                  <a href="{% url 'main:contact' %}" class="btn btnOutline">联系我</a>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ Start Content
       <div class="row">
         <div class="col-md-auto">
           <div class="keySkillCol">
-            <h4 class="smTitle pb-3">Key Skills</h4>
+            <h4 class="smTitle pb-3">主要技术栈</h4>
             {% for sk in me.userprofile.skills.all %}
             {% if sk.is_key_skill %}
             <div class="keySkillCard">
@@ -83,7 +83,7 @@ Start Content
           </div>
         </div>
         <div class="col-md">
-          <h4 class="smTitle pb-3">Coding Skills</h4>
+          <h4 class="smTitle pb-3">编码能力Coding Skills</h4>
           <div class="progressCol">
             <div class="progressCard">
               {% for sk in me.userprofile.skills.all %}
@@ -117,7 +117,7 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">Certificates</h4>
+          <h4 class="smText regular">获得的证书Certificates</h4>
         </div>
 
       </div>
@@ -157,7 +157,7 @@ Start Content
       <div class="portfolioCol">
         <div class="row pb-3">
           <div class="col">
-            <h4 class="smText regular">Featured Work</h4>
+            <h4 class="smText regular">工作经历Featured Work</h4>
           </div>
           <div class="col-auto">
             <a href="{% url 'main:portfolios' %}" class="simpleLink">View all</a>
@@ -231,7 +231,7 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">Recent posts</h4>
+          <h4 class="smText regular">最近的博客Recent posts</h4>
         </div>
         <div class="col-auto">
           <a href="{% url 'main:blogs' %}" class="simpleLink">View all</a>

@@ -37,7 +37,7 @@ Start Content
       <div class="row g-4 g-md-3  align-items-center">
         <div class="col-md-6">
           <div class="bannerContent">
-            <h1 class="xlTitle pb-md-3">Contact us below</h1>
+            <h1 class="xlTitle pb-md-3">联系我</h1>
           </div>
         </div>
       </div>
@@ -50,13 +50,13 @@ Start Content
     <div class="container">
         <form id="contactForm" method="POST" action="/contact/">
         {% csrf_token %}
-            <label for="name">Name</label>
+            <label for="name">姓名</label>
             {{form.name}}
 
-            <label for="email">Email</label>
+            <label for="email">邮箱</label>
             {{form.email}}
 
-            <label for="subject">Message</label>
+            <label for="subject">正文</label>
             {{form.message}}
 
             <input class='btn btnPrimary' type="submit" value="Submit">
