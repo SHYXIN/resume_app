@@ -67,7 +67,7 @@ Start Content
       <div class="row">
         <div class="col-md-auto">
           <div class="keySkillCol">
-            <h4 class="smTitle pb-3">主要技术栈</h4>
+            <h4 class="smTitle pb-3">主要技术能力 Key Skills</h4>
             {% for sk in me.userprofile.skills.all %}
             {% if sk.is_key_skill %}
             <div class="keySkillCard">
@@ -83,7 +83,7 @@ Start Content
           </div>
         </div>
         <div class="col-md">
-          <h4 class="smTitle pb-3">编码能力Coding Skills</h4>
+          <h4 class="smTitle pb-3">编码能力 Coding Skills</h4>
           <div class="progressCol">
             <div class="progressCard">
               {% for sk in me.userprofile.skills.all %}
@@ -117,7 +117,7 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">获得的证书Certificates</h4>
+          <h4 class="smText regular">获得的证书 Certificates</h4>
         </div>
 
       </div>
@@ -157,10 +157,10 @@ Start Content
       <div class="portfolioCol">
         <div class="row pb-3">
           <div class="col">
-            <h4 class="smText regular">工作经历Featured Work</h4>
+            <h4 class="smText regular">精选内容 Featured Work</h4>
           </div>
           <div class="col-auto">
-            <a href="{% url 'main:portfolios' %}" class="simpleLink">View all</a>
+            <a href="{% url 'main:portfolios' %}" class="simpleLink">查看全部</a>
           </div>
         </div>
         {% for p in portfolio %}
@@ -188,7 +188,7 @@ Start Content
         
       </div>
       <div class="testimonialCol">
-        <h4 class="smText regular d-block">Testimonials</h4>
+        <h4 class="smText regular d-block">感言 Testimonials</h4>
         <div class="testimonialSlider">
           <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper">
@@ -231,10 +231,10 @@ Start Content
     <div class="container">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="smText regular">最近的博客Recent posts</h4>
+          <h4 class="smText regular">最近的博客 Recent posts</h4>
         </div>
         <div class="col-auto">
-          <a href="{% url 'main:blogs' %}" class="simpleLink">View all</a>
+          <a href="{% url 'main:blogs' %}" class="simpleLink">查看全部</a>
         </div>
       </div>
       <div class="row g-3">
